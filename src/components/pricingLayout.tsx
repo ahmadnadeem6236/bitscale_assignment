@@ -24,6 +24,7 @@ function PricingLayout(props: PricingTabProps) {
       }
       `}
       >
+        {/* plan header */}
         <div className="pl-8 pt-8">
           <div className="leading-normal">
             <div className="flex justify-between pr-4">
@@ -87,6 +88,8 @@ function PricingLayout(props: PricingTabProps) {
             )}
           </div>
         </div>
+
+        {/* plan features  */}
         <div className="flex flex-col pl-8 w-[232px] justify-center pt-[26px] gap-2 ">
           {props.features.map((item, index) => {
             return (
@@ -107,7 +110,7 @@ function PricingLayout(props: PricingTabProps) {
             );
           })}
         </div>
-
+        {/* plan Use */}
         <div className=" absolute top-[508px]">
           <div
             data-orientation="horizontal"
@@ -129,6 +132,7 @@ function PricingLayout(props: PricingTabProps) {
           </div>
         </div>
       </div>
+      {/* plan button */}
       <div className=" absolute top-[650px]">
         <button
           className={`w-[232px] h-[36.82px] font-medium text-[12.47px]  rounded-md bg-[#1A56DB]
