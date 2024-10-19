@@ -131,8 +131,12 @@ function PricingLayout(props: PricingTabProps) {
       </div>
       <div className=" absolute top-[650px]">
         <button
-          className={`w-[232px] h-[36.82px] font-medium text-[12.47px] text-white rounded-md bg-[#1A56DB]
-          ${props.planName === "Booster" && "bg-[#ffff] text-[#1F2A37]"}
+          className={`w-[232px] h-[36.82px] font-medium text-[12.47px]  rounded-md bg-[#1A56DB]
+          ${
+            props.planName === "Booster"
+              ? "bg-[#ffff] text-[#1F2A37]"
+              : "text-white"
+          }
           `}
         >
           {props.btnText}
